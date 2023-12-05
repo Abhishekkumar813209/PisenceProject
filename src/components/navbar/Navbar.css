@@ -1,0 +1,11 @@
+li{
+    font-weight:900;
+    height:42px;
+    display: flex;
+    align-items: center;
+}
+
+li:hover{
+    border-bottom:2px solid blue;
+    font-weight: bold;
+}

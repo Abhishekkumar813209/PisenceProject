@@ -1,0 +1,50 @@
+// *{
+//     border:2px solid black;
+// }
+
+.contact{
+    height:100%;
+    max-width:1366px;
+    display: flex;
+    gap:30px;
+
+    .textContainer{
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+
+        
+        span{
+            font-weight: 300;
+        }
+    }
+
+    .formContainer{
+        flex:1;
+
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+    
+            input,textarea{
+                padding:10px;
+                background-color:transparent;
+                border:1px solid blue;
+                color:black;
+                border-radius:5px;
+            }
+
+            button{
+                width:200px;
+                padding:20px;
+                border:none;
+                cursor:pointer;
+                color:white;
+                border-radius:8px;
+            }
+        }
+       
+    }
+
+}
