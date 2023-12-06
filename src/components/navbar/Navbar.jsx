@@ -10,7 +10,7 @@ import "./Navbar.css"
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   return(
-    <div className="w-full h-24 sticky top-0  mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
+    <div className="w-full h-24 sticky top-0 z-50 bg-white mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div className='flex items-center gap-2 text-blue-700'>
         <img src={logo} alt="logo" className='h-[50px] w-[50px] rounded-full' />
         <p className='text-xl'> Pisence Technologies</p>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[60%] h-screen overflow-scroll absolute  top-0 left-0 bg-violet-600 opacity-1000 p-4 scrollbar-hide ml-[-32px]">
+          <div className="w-[60%] h-screen overflow-scroll absolute  top-0 left-0 bg-violet-600 opacity-1000 p-4 scrollbar-hide ml-[-8px]">
             <div className="flex flex-col gap-16 py-2 relative">
               <div>
                 <img src={logo} className="w-32 rounded-full h-[50px] w-[50px]" alt="logo" />
@@ -62,7 +62,7 @@ const Navbar = () => {
                     <Link
                       onClick={() => setShowMenu(false)}
                       activeClass="active"
-                      to={item.link}
+                      // to={item.link}
                       spy={true}
                       smooth={true}
                       offset={-70}

@@ -15,7 +15,7 @@ function Parallax({type}) {
   const pBg = useTransform(scrollYProgress,[0,1],["0%","50%"])
 
   return (
-    <div className="parallax" ref={ref} style={{background:"linear-gradient(180deg,blue,skyblue,blue)"}} id="offerings">
+    <div className="parallax mt-16" ref={ref} style={{background:"linear-gradient(180deg,blue,skyblue,blue)"}} id="offerings">
     <motion.h2 style={{y:yBg}} className='text-white text-6xl mt-[-400px]'>Services We Offer </motion.h2>
     <motion.div className="mountains"></motion.div>
     <motion.div style={{y:pBg}} className="planets"></motion.div>

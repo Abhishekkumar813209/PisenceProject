@@ -1,7 +1,7 @@
 import React,{useState,useEffect, useRef} from 'react'
 import ContactLeft from './ContactLeft';
 import {motion,AnimatePresence} from "framer-motion"
-
+import emailjs from '@emailjs/browser';
 
 const variants = {
   initial:{
@@ -20,6 +20,10 @@ const variants = {
 
 
 const Contact = () => {
+  const formRef = useRef();
+  const [error,setError] = useState(false);
+  const [success,setSuccess] = useState(false);
+
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -37,6 +41,19 @@ const Contact = () => {
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
   // ========== Email Validation end here ================
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_jfr0aqp', 'template_4e2dla3', formRef.current, 'rNrsH9JerWP4ZVQp-')
+      .then((result) => {
+        setSuccess(false)
+          console.log(result.text);
+      }, (error) => {
+        setError(true)
+          console.log(error.text);
+      });
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -143,6 +160,8 @@ const Contact = () => {
           <AnimatePresence>
           {showForm && (
           <motion.form
+            onSubmit={sendEmail}
+            ref={formRef}
             key="form"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -168,6 +187,7 @@ const Contact = () => {
                   <input
                     onChange={(e) => setUsername(e.target.value)}
                     value={username}
+                    name="name"
                     className={`${
                       errMsg === "Username is required!" &&
                       "outline-designColor"
@@ -197,6 +217,7 @@ const Contact = () => {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
+                  name="email"
                   className={`${
                     errMsg === "Please give your Email!" &&
                     "outline-designColor"
@@ -225,6 +246,7 @@ const Contact = () => {
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
+                  name={message}
                   className={`${
                     errMsg === "Message is required!" && "outline-designColor"
                   } contactTextArea border-[2px] rounded-lg border-blue-300 focus:border-blue-600 focus:outline-none text-lg`}
@@ -240,6 +262,8 @@ const Contact = () => {
                 Send Message
               </button>
             </div>
+              {error && "Error"}
+              {success &&  'Success'}
             {errMsg && (
               <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                 {errMsg}
@@ -250,6 +274,7 @@ const Contact = () => {
                 {successMsg}
               </p>
             )}
+
           </motion.form>
         )}
           </AnimatePresence>
