@@ -6,8 +6,8 @@ import { BsGraphUpArrow } from "react-icons/bs";
 import { security,security2,security3 } from "../assets";
 import { analyticsmonitoring,analyticsmonitoring2,analyticsmonitoring3,analyticsmonitoring4,analyticsmonitoring5,analyticsmonitoring6,analyticsmonitoring7 } from "../assets"
 import { inframonitoring,inframonitoring2,inframonitoring3,inframonitoring4 } from "../assets";
-import { iotmonitor,iotmonitoring2,iotmonitoring4} from "../assets";
-import { schoolmonitor3 } from "../assets";
+import { iotmonitor,iotmonitoring2,iotmonitoring4,IotMonitoring4} from "../assets";
+import { SchoolMonitor3 } from "../assets";
 import { vehiclemonitoring,vehiclemonitoring2,vehiclemonitoring3,vehiclemonitoring4 } from "../assets";
 
 // Features Data
@@ -42,13 +42,13 @@ export const featuresData = [
 export const servicesData = [
   {
     id:1,
-    img:iotmonitoring4,
+    img:IotMonitoring4,
     title:"IoT Monitoring Service",
     desc:"At PiSence,we offer IoT monitoring services tailored to your business needs. Our expert team ensures real-time visibility and control over your interconnected devices, allowing your operations to run smoothly. With advanced technologies and best practices, we enable you to focus on growing your business while we manage seamless operations.",
   },
   {
     id:2,
-    img:schoolmonitor3,
+    img:SchoolMonitor3,
     title:"School Monitoring Service",
     desc:"A school management system streamlines education tasks, including enrollment, attendance, and grades. It enhances communication and transparency among teachers, students, and parents through online portals and automation. This ensures efficient operations, a smoother educational experience, and accurate data management."
   },

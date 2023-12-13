@@ -11,10 +11,12 @@ import analytics from "./../assets/images/works/iotmonitoring.png";
 import schoolmonitor from "./../assets/images/works/schoolMonitoring.jpg";
 import schoolmonitor2 from "./../assets/images/school/schoolMonitoring2.gif"
 import schoolmonitor3 from "./../assets/images/school/schoolMonitoring3.gif";
-import schoolmonitor4 from "./../assets/images/school/schoolMonitoring4.gif";
-import schoolmonitor5 from "./../assets/images/school/schoolMonitoring5.gif";
+import SchoolMonitor3 from "./../assets/images/school/SchoolMonitoring4.mp4"
+import schoolmonitor4 from "./../assets/images/school/School4.mp4";
+import schoolmonitor5 from "./../assets/images/school/School5.mp4";
 
-import iot from './../assets/images/home/iot2.png'
+
+// import iot from './../assets/images/home/iot2.png'
 import analytics2 from "./images/analytics2.png"
 import meet2 from './images/meet2.jpg'
 import team from "./images/team-work.jpg"
@@ -31,25 +33,28 @@ import analyticsmonitoring3 from  './images/analytics/analyticsmonitoring3.jpg';
 import analyticsmonitoring4 from  './images/analytics/analyticsmonitoring4.jpg';
 import analyticsmonitoring5 from  './images/analytics/analyticsmonitoring5.jpg';
 import analyticsmonitoring6 from  './images/analytics/analyticsmonitoring6.jpg';
-import analyticsmonitoring7 from "./images/analytics/analyticsmonitoring7.gif"
+import analyticsmonitoring7 from "./images/analytics/analyticmonitoring.mp4"
 
 import inframonitoring from "./images/infra/inframonitoring.jpg"
 import inframonitoring2 from "./images/infra/inframonitoring2.jpg"
 import inframonitoring3 from "./images/infra/inframonitoring3.jpg"
-import inframonitoring4 from "./images/infra/inframonitoring4.gif"
+import inframonitoring4 from "./images/infra/Infra.mp4"
 
 import vehiclemonitoring from "./images/vehicle/vehiclemonitoring.jpg"
 import vehiclemonitoring2 from "./images/vehicle/vehiclemonitoring2.jpg"
 import vehiclemonitoring3 from "./images/vehicle/vehiclemonitoring3.jpg"
-import vehiclemonitoring4 from "./images/vehicle/vehiclemonitoring4.gif"
+import vehiclemonitoring4 from "./images/vehicle/vehicle.mp4"
 
 import security from "./images/security/security.jpg";
 import security2 from "./images/security/security2.jpg";
-import security3 from "./images/security/security3.gif"
+import security3 from "./images/security/security.mp4"
 
 import iotmonitoring2 from "./images/iot/iotmonitoring2.png";
 import iotmonitoring3 from "./images/iot/iotmointoring3.gif";
 import iotmonitoring4 from "./images/iot/iotmonitoring4.gif"
+import iot from "./images/iot/iot3.mp4";
+import IotMonitoring4 from "./images/iot/IotMonitoring.mp4";
+
 
 export {
     home,
@@ -61,7 +66,7 @@ export {
     analytics,
     schoolmonitor,
     schoolmonitor2,
-    schoolmonitor3,
+    SchoolMonitor3,
     schoolmonitor4,
     schoolmonitor5,
     iot,
@@ -99,6 +104,7 @@ export {
     iotmonitoring2,
     iotmonitoring3,
     iotmonitoring4,
+    IotMonitoring4,
 
     quote
 }

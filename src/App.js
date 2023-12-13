@@ -12,6 +12,7 @@ import Footer from './components/footer/Footer';
 import FooterBottom from './components/footer/FooterBottom';
 import ParallaxCommponent from "./components/parallax/ParallaxComponent.jsx"
 import Testimonial from './components/tesimonial/index.jsx';
+import { IotMonitoring4 } from './assets/index.js';
 
 function App() {
   Aos.init({

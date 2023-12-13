@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from '../layouts/Title'
-import {iotmonitor,iotmonitoring2,iotmonitoring3,iotmonitoring4, schoolmonitor5 } from "../../assets";
+import {iotmonitor,iotmonitoring2,iotmonitoring3,iotmonitoring4, schoolmonitor5,iot } from "../../assets";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -136,9 +136,9 @@ const Testimonial = () => {
           <div className="w-full text-blue-500">
             <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
               <div className="w-full lgl:w-[35%] h-full p-8 rounded-lg flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <img
+                <video loop muted autoplay="autoplay"
                   className="h-72 md:h-48 lgl:h-72 rounded-lg object-cover lgl:mt-16"
-                  src={iotmonitoring3}
+                  src={iot}
                   alt="testimonialTwo"
                 />               
               </div>
@@ -173,12 +173,11 @@ const Testimonial = () => {
           <div className="w-full text-blue-500">
             <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
               <div className="w-full lgl:w-[35%] h-full p-8 rounded-lg flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <img
+                <video loop muted autoplay="autoplay"
                   className="h-72 md:h-48 lgl:h-72 rounded-lg object-cover lgl:mt-16"
                   src={schoolmonitor5}
                   alt="testimonialOne"
                 />
-             
               </div>
               <div className="w-full lgl:w-[60%] h-full flex flex-col justify-between">
                 <div className="w-full h-[70%] py-10 p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">

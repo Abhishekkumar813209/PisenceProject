@@ -62,7 +62,7 @@ const Navbar = () => {
                     <Link
                       onClick={() => setShowMenu(false)}
                       activeClass="active"
-                      // to={item.link}
+                      to={item.link}
                       spy={true}
                       smooth={true}
                       offset={-70}
