@@ -13,7 +13,7 @@ import schoolmonitor2 from "./../assets/images/school/schoolMonitoring2.gif"
 import schoolmonitor3 from "./../assets/images/school/schoolMonitoring3.gif";
 import SchoolMonitor3 from "./../assets/images/school/SchoolMonitoring4.mp4"
 import schoolmonitor4 from "./../assets/images/school/School4.mp4";
-import schoolmonitor5 from "./../assets/images/school/School5.mp4";
+import schoolmonitor5 from "./../assets/images/school/schoolMonitoring5.gif"
 
 
 // import iot from './../assets/images/home/iot2.png'

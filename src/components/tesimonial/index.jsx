@@ -173,7 +173,7 @@ const Testimonial = () => {
           <div className="w-full text-blue-500">
             <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
               <div className="w-full lgl:w-[35%] h-full p-8 rounded-lg flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <video loop muted autoplay="autoplay"
+                <img 
                   className="h-72 md:h-48 lgl:h-72 rounded-lg object-cover lgl:mt-16"
                   src={schoolmonitor5}
                   alt="testimonialOne"
